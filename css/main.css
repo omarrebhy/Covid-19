@@ -1,0 +1,1097 @@
+body {
+    transition: 0.6s;
+}
+
+.home {
+    color: #3983c9;
+    font-family: 'Playfair Display', serif;
+}
+
+.btn {
+    margin-right: 20px;
+    border-radius: 50px;
+    outline: none;
+}
+
+.bottom {
+    margin-right: 150px;
+}
+
+.btn-primary {
+    background: royalblue;
+}
+
+/* ========= start DarkMode===========*/
+#container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.switch {
+    width: 60px;
+    height: 34px;
+    display: inline-block;
+    position: relative;
+}
+
+.switch input {
+    display: none;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #ccc;
+    border-radius: 34px;
+    transition: 0.4s;
+}
+
+.slider::before {
+    content: '';
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    left: 4px;
+    bottom: 4px;
+    background: #fff;
+    border-radius: 50%;
+    transition: 0.4s;
+}
+
+input:checked+.slider {
+    background: #333;
+
+}
+
+input:checked+.slider::before {
+    transform: translateX(26px);
+
+}
+
+.dark-mode {
+    background: #0b0a14;
+    color: #f7f0e9;
+}
+
+.dark-mode .display-p1 {
+    color: #f7f0e9;
+}
+
+/* ========= end DarkMode===========*/
+.navbar-brand {
+    margin-left: 130px;
+}
+
+
+.navbar {
+    background: linear-gradient(to bottom, #ebebeb 50%, #ffffff);
+    margin: auto;
+    color: #000000af;
+}
+
+.navbar-expand-lg .navbar-collapse {
+    margin-right: 30px;
+}
+
+.home img {
+    width: 40px;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: rgb(18, 108, 141);
+    margin-right: 10px;
+    transition: all 1s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    border-radius: 50px;
+    background: rgb(17, 84, 184);
+    color: white;
+    transform: scale(1.1, 1.1);
+}
+
+.animation {
+    font-size: 26px;
+    animation-name: virus;
+    animation-timing-function: linear;
+    animation-duration: 7s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes virus {
+    25% {
+        transform: rotate(90deg);
+    }
+
+    50% {
+        transform: rotate(180deg);
+    }
+
+    75% {
+        transform: rotate(270deg);
+    }
+
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+/*===================end nav==========================================================================================================*/
+
+
+
+
+.about {
+    background-image: url(../img/shape-a.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about .left .h2 {
+    font-size: 65px;
+    font-weight: 900;
+    color: #50658e;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+}
+
+.about .left span h3 {
+    font-size: 28px;
+    text-transform: uppercase;
+    color: #FF5363;
+    font-family: 'Oswald', sans-serif;
+    margin-top: 14px;
+}
+
+.about .left span h2 {
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #50658e;
+    font-family: 'Oswald', sans-serif;
+}
+
+.toprotect {
+    color: white;
+    transition: all 1s;
+    margin-top: 30px;
+}
+
+.toprotect:hover {
+    transform: scale(1.1, 1.1);
+}
+
+.about-covid {
+    margin-top: 30px;
+}
+
+.about-covid a {
+    text-decoration: none;
+    transform: scale(1.1, 1.1);
+    font-weight: bold;
+}
+
+.arrow {
+    font-family: 'Courier New', Courier, monospace;
+
+}
+
+#rows {
+    margin-top: 100px;
+
+}
+
+#rows .World-numbers {
+    margin-bottom: 50px;
+}
+
+#flu {
+    width: 600px;
+    margin-top: -400px;
+    margin-left: 600px;
+}
+
+#about {
+    margin-top: 160px;
+}
+
+.about .left .italic {
+    font-size: 12px;
+    color: #7d92bb;
+}
+
+/* =====================endhome====================================================================================================*/
+
+.about-corona {
+    margin-top: 65px;
+}
+
+.left-about-corona .display-h3 {
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.left-about-corona .display-h2 {
+
+    color: #3d4b69;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.left-about-corona .display-p1 {
+    font-weight: bold;
+}
+
+.left-about-corona .display-p2 {
+    color: #4d68a3;
+    font-weight: bolder;
+}
+
+#rightabout-corona {
+    color: #465675;
+    font-size: 20px;
+    padding: 20px 30px;
+    font-weight: bold;
+    border-bottom: 1px solid #e7e8ff;
+}
+
+.list-group-item {
+    width: 400px;
+    height: 70px;
+    color: #2a81ea;
+    font-size: 16px;
+    padding: 20px 30px;
+
+    border-bottom: 1px solid #e7e8ff;
+
+}
+
+.list {
+    margin: 25px;
+
+}
+
+.list ul {
+    list-style-type: none;
+}
+
+.list ul li a {
+    text-decoration: none;
+
+}
+
+.list ul li a:hover {
+    transform: scale(1.1, 1.1);
+}
+
+#list1 {
+    margin-left: 130px;
+}
+
+#list2 {
+    margin-left: 135px;
+}
+
+#list3 {
+    margin-left: 150px;
+}
+
+#list4 {
+    margin-left: 140px;
+}
+
+#list5 {
+    margin-left: 120px;
+}
+
+#list6 {
+    margin-left: 155px;
+}
+
+/* =====================aboutcorona====================================================================================================*/
+#transmission {
+    margin-top: 200px;
+}
+
+.transmission-text {
+    text-align: center;
+}
+
+.transmission-text .display-h3 {
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.transmission-text .display-h2 {
+    color: #3d4b69;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+
+}
+
+#spread-img {
+    border-bottom: 6px solid #9cc2f7;
+}
+
+.spread img {
+    width: 90%;
+    display: flex;
+}
+
+.spread h5 {
+    color: #2a81ea;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.spread p {
+    font-size: 15px;
+}
+
+.transmission-btn {
+    width: 90%;
+    text-align: center;
+    margin: 40px 0px 0px 40px;
+    height: 40px;
+}
+
+.transmission-btn .btn {
+    background: #2a81ea;
+    font: 1em sans-serif;
+}
+.transmission-btn button:hover {
+    font-size: 20px;
+}
+
+/*==========endTransmission=======================================================================*/
+
+.symptoms .display-h3 {
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.symptoms .display-h2 {
+    color: #3d4b69;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.symptoms p {
+    text-align: left;
+}
+
+.symptoms {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.symptoms-box {
+    margin-top: 80px;
+}
+
+.symptoms-box-img img {
+    width: 20%;
+    border-radius: 50%;
+    margin-left: 260px;
+}
+
+.symptoms .symptoms-button .text {
+    display: flex;
+    margin-top: 100px;
+}
+
+#say {
+    font-size: 40px;
+    color: #2a81ea;
+    margin: 3px;
+    margin-right: 6px;
+}
+
+.button .btn {
+    margin-right: 100px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    margin-left: 300px;
+    position: absolute;
+}
+
+.style-h33 {
+    color: #2a81ea;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/*==========endsymptoms=======================================================================*/
+
+.prevention .display-h3 {
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+.prevention .display-h2 {
+    color: #3d4b69;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    text-transform: uppercase;
+    margin-bottom: 25px;
+}
+
+.prevention p {
+    text-align: left;
+}
+
+.prevention {
+    text-align: center;
+    margin-top: 150px;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.prevention-boxs {
+    margin-top: 80px;
+}
+
+.prevention .prevention-boxs .prevention-box .box-text h3 {
+    color: #3d4b69;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.box-text {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.box-img img {
+    border-radius: 50%;
+    width: 100px;
+    margin-left: 50px;
+}
+
+.prevention-button {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    margin-top: 50px;
+}
+
+.prevention-button a {
+    text-decoration: none;
+    margin: 20px;
+}
+
+/*==========endprevention=======================================================================*/
+.others {
+    margin-top: 100px;
+}
+
+.others-text h2 {
+    font-weight: bold;
+    color: #465675;
+    font-size: 30px;
+    margin-bottom: 40px;
+    margin-top: 40px;
+    margin-left: 20px;
+}
+
+.others .protect-others .others-text ul {
+    list-style: none;
+}
+
+.others .protect-others .others-text ul li p span {
+    font-weight: bold;
+}
+
+#others {
+    color: green;
+    position: absolute;
+    margin-left: -30px;
+    margin-top: 4px;
+
+}
+
+.others .protect-others .others-img img {
+    width: 100%;
+    height: 100%;
+}
+
+.protect-others {
+    background: honeydew;
+    border-radius: 30px;
+}
+
+.styles-p1 {
+    color: #2d4986;
+}
+
+
+/*==========endothers=======================================================================*/
+.follow-steps-text {
+    margin-top: 90px;
+    text-align: center;
+}
+
+.follow-steps-text h2 {
+    font-weight: bold;
+    color: #465675;
+    font-size: 40px;
+}
+
+.follow-steps .follow-steps-imgs .follow-steps-img img {
+    margin-top: 50px;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.follow-steps .follow-steps-imgs .follow-steps-img p {
+
+    font-weight: bold;
+    font-size: 14px;
+    margin-top: 15px;
+    text-align: center;
+}
+
+#wash-hand {
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 20px;
+    word-spacing: 5px;
+}
+
+/*==========endfollow-steps=======================================================================*/
+
+.treatment {
+    background-color: #2766bb;
+    background-image: url(../img/shape-a.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    margin-top: 50px;
+}
+
+.treatment .style-p {
+    color: #f7f9ff;
+}
+
+.treatment .h2 {
+    color: #f7f9ff;
+}
+.treatment .h3 {
+    color: #73e3ff;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+.treatment .treatment-self {
+    background-color: #1b47a1;
+    margin: auto;
+    padding: 50px;
+    border-radius: 7px;
+    color: white;
+}
+.treatment .treatment-self h5 {
+    font-size: 16px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.treatment .treatment-self p {
+    line-height: 1.5em;
+    margin-bottom: 10px;
+}
+
+.treatment .treatment-self ul {
+    list-style: none;
+    padding: 0;
+}
+
+.treatment .treatment-self ul li {
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.treatment .treatment-self ul li .icon {
+    margin-right: 10px;
+}
+
+
+/*==========endtreatment=======================================================================*/
+
+.protect-text {
+    text-align: center;
+    margin-top: 90px;
+}
+.protect .protect-text {
+    text-align: center;
+}
+
+.protect .protect-text .h2 {
+    color: #3d4b69;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.protect .protect-text .h3 {
+    color: #2a81ea;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+
+.protect .protect-imgs {
+    margin-top: 50px;
+    display: flex;
+}
+
+.protect .protect-imgs .protect-imgs2 img {
+    width: 100%;
+    height: 100%;
+}
+
+.protect .protect-imgs .box {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+    position: relative;
+}
+.protect .protect-imgs .protect-imgs3 .box {
+    justify-content: flex-start;
+}
+
+.protect .protect-imgs .text p {
+    color: #2a81ea;
+    font-weight: bold;
+    font-size: 14px;
+    margin-right: 20px;
+}
+
+.protect .protect-imgs .protect-imgs3 .text p {
+    margin-left: 20px;
+}
+
+.protect .protect-imgs .box .img {
+    width: 80px;
+}
+
+.protect .protect-imgs .img img {
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border: 2px solid #2a81ea;
+    background-color: #fff;
+    width: 80px;
+    height: 100%;
+}
+
+.protect .protect-imgs .box .icon {
+    font-size: 20px;
+    position: absolute;
+    top: 0;
+}
+
+.protect .protect-imgs .protect-imgs1 .box .icon {
+    color: #f86168;
+    left: 65%;
+}
+
+.protect .protect-imgs .protect-imgs3 .box .icon {
+    color: #3dca93;
+    right: 65%;
+}
+
+.protect .protect-imgs .box .icon svg {
+    background-color: white;
+}
+
+/* ======================================end protect ============================== */
+
+.faq {
+    padding: 100px 0;
+}
+
+.faq .faq-text {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.faq .faq-text .h2 {
+    color: #3d4b69;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+
+}
+
+.faq .faq-box-select a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    color: #50658e;
+    font-size: 14px;
+    padding: 15px 20px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    border: 2px solid #e7e8ff;
+    border-radius: 5px;
+}
+
+
+.faq .faq-text2 button {
+    display: flex;
+    justify-content: space-between;
+}
+
+.faq .faq-text2 .btn {
+    font-size: 16px !important;
+    color: #465675 !important;
+    background-color: transparent !important;
+    padding: 0px !important;
+    text-transform: capitalize !important;
+    border: none !important;
+    border-radius: none !important;
+}
+
+.faq .faq-text2 p {
+    color: #3d4b69;
+    line-height: 1.5em;
+    margin-bottom: 0px;
+}
+
+.btn-link:focus {
+    text-decoration: none !important;
+}
+
+.btn-link:hover {
+    text-decoration: none;
+
+}
+
+.btn:focus {
+    box-shadow: none !important
+}
+
+.hide {
+    display: none;
+}
+
+.style-ul {
+    border: none;
+    list-style-type: disc;
+    margin-left: 20px;
+    border-radius: 0;
+}
+
+/* ======================================end faq ============================== */
+
+.latest-text {
+    text-align: center;
+    margin-top: 200px;
+}
+
+.latest-text .h3 {
+    color: #2a81ea;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+}
+
+.latest-text .h2 {
+    color: #3d4b69;
+    font-size: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+}
+
+.card-text {
+    color: black;
+}
+
+.card-group #card {
+    border: 0px;
+    margin-top: 30px;
+    border-radius: 10px;
+    margin-right: 20px;
+}
+
+.card-group h5 {
+    color: #465675;
+}
+
+.card-group img {
+    border-radius: 2%;
+    width: 85%;
+    margin: auto;
+}
+
+/* ======================================endlates ============================== */
+
+footer {
+    background-color: #151c2e;
+    background-image: url(../img/shape-a.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 100px 0;
+    margin-top: 60px;
+}
+
+.footer-boxes {
+    padding: 0 50px;
+}
+
+
+.footer-boxes .footer-box {
+    padding-bottom: 50px;
+    border-bottom: 1px solid rgba(247, 248, 255, 0.1);
+    margin-bottom: 20px;
+    color: #b2bfe0;
+    font-size: 13px;
+    line-height: 1.5em;
+}
+
+.footer-boxes .footer-box .logo h1 {
+    text-transform: uppercase;
+    color: white;
+    font-weight: 900;
+    font-size: 28px;
+}
+
+.footer-boxes .footer-box .logo img {
+    width: 40px;
+
+}
+
+.footer-boxes .footer-box .logo h1 {
+    color: #3983c9;
+    font-family: 'Playfair Display', serif;
+}
+
+
+.footer-boxes .footer-box .logo h1 i {
+    color: #FF5363;
+    font-size: 28px;
+    margin: 0;
+    cursor: unset;
+}
+
+.footer-boxes .footer-box i {
+    font-size: 22px;
+    color: white;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.footer-boxes .footer-box h3 {
+    color: white;
+}
+
+.footer-boxes .footer-box ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-boxes .footer-box ul li {
+    margin-bottom: 20px;
+}
+
+.footer-boxes .footer-box ul li a {
+    color: #b2bfe0;
+    text-decoration: none;
+}
+
+.style-h3 {
+    color: #2a81ea;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 7px;
+    font-weight: bold;
+}
+
+.footer-text p {
+    margin-bottom: 20px;
+    color: #b2bfe0;
+    font-size: 13px;
+    line-height: 1.5em;
+}
+
+.footer-text span {
+    font-size: 14px;
+    font-weight: bold;
+    color: white;
+}
+
+/*===============endFooter==============================================*/
+@media (max-width: 575.98px) {
+    .navbar-brand {
+        margin-left: 60px;
+    }
+    #flu.flu-img {
+        width: 260px;
+        margin: auto;
+        margin-right: 30px;
+        margin-left: 50px;
+    }
+
+    .toprotect {
+        text-align: center;
+        transition: all 1s;
+    }
+
+    .toprotect:hover {
+        transform: scale(1.1, 1.1);
+    }
+
+    .about-covid {
+        text-align: center;
+        margin-top: 25px;
+        margin-right: 5px;
+    }
+
+    .World-numbers {
+        text-align: center;
+    }
+
+    .about .left h1 {
+        font-size: 70px;
+    }
+
+    .btn {
+        margin-top: 10px;
+    }
+
+    .left-about p {
+        font-size: 12px
+    }
+
+    .left-about-corona .display-h2 {
+        text-align: center;
+    }
+
+    .display-h3 {
+        font-size: 15px;
+        text-align: center;
+    }
+
+    .display-p2 {
+        font-size: 15px;
+    }
+
+    .left-about p {
+        font-size: 12px
+    }
+
+    .list-group-item {
+        width: 325px;
+        height: 55px;
+        color: #2a81ea;
+        font-size: 15px;
+        padding: 20px 25px;
+        border-bottom: 1px solid #e7e8ff;
+    }
+
+    #rightabout-corona {
+        color: #465675;
+        font-size: 22px;
+        padding: 15px 20px;
+        font-weight: bold;
+        border-bottom: 1px solid #e7e8ff;
+    }
+
+    #list1 {
+        margin-left: 70px;
+    }
+
+    #list2 {
+        margin-left: 75px;
+    }
+
+    #list3 {
+        margin-left: 92px;
+    }
+
+    #list4 {
+        margin-left: 82px;
+    }
+
+    #list5 {
+        margin-left: 60px;
+    }
+
+    #list6 {
+        margin-left: 98px;
+    }
+
+
+    .transmission-btn button:hover {
+        font-size: 15px;
+    }
+
+
+    .symptoms-button .text p {
+        font-size: 18px;
+        justify-content: space-around;
+    }
+
+    .symptoms-box-img img {
+        margin-left: 230px;
+    }
+
+
+    .button .btn {
+        margin-left: -113px;
+        margin-top: 30px;
+        height: 40px;
+        width: 250px;
+        font-size: 13px;
+        position: absolute;
+    }
+
+    .follow-steps-text h2 {
+
+        font-size: 25px;
+    }
+
+}
+/*========================== end Project   ==================================================================*/
